@@ -1,0 +1,15 @@
+# CODESYS generated files
+*.bootinfo
+*.bootinfo_guids
+*.compileinfo
+*.precompilecache
+*.opt
+*.~u
+*.project~
+*.tmp
+*.core
+__compileinfo__/
+
+# Windows generated files
+Thumbs.db
+Desktop.ini

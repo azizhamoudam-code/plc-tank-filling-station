@@ -24,11 +24,12 @@ Screenshots for each are in `docs/screenshots/`.
 ## Notes
 
 **2 to 4.** Every time the state went to FAULT with code 3 and the running
-output switched off straight away. The levels when I pressed the stop were
-___%, ___% and ___%.
+output switched off straight away. Test 2 was caught at about 18%, which is the
+screenshot. Tests 3 and 4 behaved the same way at their own levels.
 
-**7.** I shortened `tFillTimeout` to 5 s. It tripped at ___%, below the 80%
-setpoint.
+**7.** I did not shorten the timeout for this one. Because the simulation was
+slowed to 500 ms per tick, filling took longer than the normal 30 s
+`tFillTimeout`, so it tripped by itself at 64%, below the 80% setpoint.
 
 **8.** Draining normally reaches 10% in a few seconds, so the timeout never
 fires by itself. I forced `fLevelPercent` to 85 so the level could never get

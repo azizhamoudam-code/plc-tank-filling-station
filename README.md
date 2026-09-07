@@ -44,14 +44,11 @@ plc-tank-filling-station/
 │   ├── FB_TankSimulation.st
 │   └── PLC_PRG.st
 ├── docs/
-│   ├── CODESYS_SETUP.md
-│   ├── state_diagram.md
 │   └── screenshots/
 ├── tests/
 │   └── Test_Cases.md
 └── export/
     ├── TankFillingStation.xml
-    └── README.md
 ```
 
 ## Run the project
@@ -89,16 +86,16 @@ For this reason, Test 10 is recorded as **partially verified by normal-cycle obs
 
 | Evidence | File |
 |---|---|
-| Clean build | [`01_build_clean.png`](docs/screenshots/00_build_clean.png) |
-| IDLE | [`02_idle.png`](docs/screenshots/01_idle.png) |
-| FILLING | [`03_filling.png`](docs/screenshots/02_filling.png) |
-| MIXING | [`04_mixing.png`](docs/screenshots/03_mixing.png) |
-| DRAINING | [`05_draining.png`](docs/screenshots/04_draining.png) |
-| COMPLETE | [`06_complete.png`](docs/screenshots/05_complete.png) |
-| Emergency Stop fault | [`07_fault.png`](docs/screenshots/06_fault_estop.png) |
-| Fill-timeout test | [`07_fault_fill_timeout.png`](docs/screenshots/07_fill_timeout.png) |
-| Drain-timeout test | [`08_fault_drain_timeout.png`](docs/screenshots/08_fault_drain_timeout.png) |
-| Mixer-interlock test | [`09_mixer_interlock.png`](docs/screenshots/09_mixer_interlock.png) |
+| Clean build | `00_build_clean.png` |
+| IDLE | `01_idle.png` |
+| FILLING | `02_filling.png` |
+| MIXING | `03_mixing.png` |
+| DRAINING | `04_draining.png` |
+| COMPLETE | `05_complete.png` |
+| Emergency Stop fault | `06_fault_estop.png` |
+| Fill-timeout test | `07_fill_timeout.png` |
+| Drain-timeout test | `08_fault_drain_timeout.png` |
+| Mixer-interlock test | `09_mixer_interlock.png` |
 
 ## License
 

@@ -84,18 +84,45 @@ For this reason, Test 10 is recorded as **partially verified by normal-cycle obs
 
 ## Screenshots
 
-| Evidence | File |
-|---|---|
-| Clean build | `00_build_clean.png` |
-| IDLE | `01_idle.png` |
-| FILLING | `02_filling.png` |
-| MIXING | `03_mixing.png` |
-| DRAINING | `04_draining.png` |
-| COMPLETE | `05_complete.png` |
-| Emergency Stop fault | `06_fault_estop.png` |
-| Fill-timeout test | `07_fill_timeout.png` |
-| Drain-timeout test | `08_fault_drain_timeout.png` |
-| Mixer-interlock test | `09_mixer_interlock.png` |
+<table>
+<tr>
+  <td align="center" width="33%"><b>IDLE</b><br>waiting for Start</td>
+  <td align="center" width="33%"><b>FILLING</b><br>inlet valve open</td>
+  <td align="center" width="33%"><b>MIXING</b><br>full at 80%</td>
+</tr>
+<tr>
+  <td><img src="docs/screenshots/01_idle.png"></td>
+  <td><img src="docs/screenshots/02_filling.png"></td>
+  <td><img src="docs/screenshots/03_mixing.png"></td>
+</tr>
+<tr>
+  <td align="center"><b>DRAINING</b><br>drain valve open</td>
+  <td align="center"><b>COMPLETE</b><br>waiting for Reset</td>
+  <td align="center"><b>FAULT</b><br>E-Stop, everything off</td>
+</tr>
+<tr>
+  <td><img src="docs/screenshots/04_draining.png"></td>
+  <td><img src="docs/screenshots/05_complete.png"></td>
+  <td><img src="docs/screenshots/06_fault_estop.png"></td>
+</tr>
+</table>
+
+Only one actuator lamp is ever lit, the mixer runs only at 80%, and in FAULT
+everything goes dark at once.
+
+### Test evidence
+
+**Fill timeout** — faulted at 64%, error code 1
+
+![Fill timeout](docs/screenshots/07_fill_timeout.png)
+
+**Drain timeout** — error code 2
+
+![Drain timeout](docs/screenshots/08_fault_drain_timeout.png)
+
+**Mixer interlock** — mixer off while the state is still MIXING
+
+![Mixer interlock](docs/screenshots/09_mixer_interlock.png)
 
 ## License
 
